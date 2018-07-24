@@ -1,0 +1,13 @@
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>{{title}}</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img [src]="client" alt="" *ngFor="let client of clients">
+        </div>
+
+      </div>
+    </section><!-- #clients -->

@@ -1,0 +1,26 @@
+<section id="about">
+  <div class="container">
+
+    <header class="section-header">
+      <h3>{{title}}</h3>
+      <p>{{aboutDescription}}</p>
+    </header>
+
+    <div class="row about-cols">
+
+      <div class="col-md-4 wow fadeInUp" [attr.data-wow-delay]="'0.'+i+'s'" *ngFor="let item of about; let i = index">
+        <div class="about-col">
+          <div class="img">
+            <img [src]="item.image" alt="" class="img-fluid">
+            <div class="icon"><i [ngClass]="item.icon"></i></div>
+          </div>
+          <h2 class="title"><a href="#">{{item.title}}</a></h2>
+          <p>
+            {{item.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- #about -->

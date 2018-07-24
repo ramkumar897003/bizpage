@@ -1,0 +1,36 @@
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">{{title}}</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li [attr.data-filter]="'.filter-'+filter" *ngFor="let filter of portfolioFilters">{{filter}}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" [ngClass]="'filter-' + portfolio.filter" *ngFor="let portfolio of portfolios">
+            <div class="portfolio-wrap">
+              <figure>
+                <img [src]="portfolio.image" class="img-fluid" alt="">
+                <a [href]="portfolio.image" data-lightbox="portfolio" [attr.data-title]="portfolio.title" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">{{portfolio.title}}</a></h4>
+                <p>{{portfolio.filter}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->

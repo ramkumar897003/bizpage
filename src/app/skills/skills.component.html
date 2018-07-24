@@ -1,0 +1,19 @@
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>{{title}}</h3>
+          <p>{{skillsDescription}}</p>
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress" *ngFor="let skill of skills">
+            <div class="progress-bar" [ngClass]="skill.color" role="progressbar" [attr.aria-valuenow]="skill.completion" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">{{skill.title}} <i class="val">{{skill.completion}}%</i></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>

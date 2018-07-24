@@ -1,0 +1,22 @@
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>{{title}}</h3>
+          <p>{{factsDescription}}</p>
+        </header>
+
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center" *ngFor="let fact of facts">
+            <span data-toggle="counter-up">{{fact.value}}</span>
+            <p>{{fact.title}}</p>
+  				</div>
+  			</div>
+
+        <div class="facts-img">
+          <img [src]="factImage" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </section><!-- #facts -->

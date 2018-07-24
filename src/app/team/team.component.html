@@ -1,0 +1,30 @@
+<section id="team">
+  <div class="container">
+    <div class="section-header wow fadeInUp">
+      <h3>{{title}}</h3>
+      <p>{{teamDescription}}</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 wow fadeInUp" *ngFor="let item of team">
+        <div class="member">
+          <img [src]="item.image" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>{{item.name}}</h4>
+              <span>{{item.designation}}</span>
+              <div class="social">
+                <a [href]="item.twitter"><i class="fa fa-twitter"></i></a>
+                <a [href]="item.facebook"><i class="fa fa-facebook"></i></a>
+                <a [href]="item.google"><i class="fa fa-google-plus"></i></a>
+                <a [href]="item.linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- #team -->
