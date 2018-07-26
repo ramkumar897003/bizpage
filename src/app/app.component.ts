@@ -166,7 +166,7 @@ export class AppComponent {
     }
   ];
 
-  factsdescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque";
+  factsDescription = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque";
   factImage = 'assets/img/facts-img.png';
   facts = [
     {

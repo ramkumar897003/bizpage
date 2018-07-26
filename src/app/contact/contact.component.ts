@@ -9,7 +9,7 @@ export class ContactComponent implements OnInit {
 
   @Input() title: string;
   @Input() contactDescription: string;
-  @Input() address: object;
+  @Input() address: any;
   constructor() { }
 
   ngOnInit() {

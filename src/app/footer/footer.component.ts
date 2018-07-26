@@ -9,8 +9,8 @@ export class FooterComponent implements OnInit {
 
   @Input() title: string;
   @Input() description: string;
-  @Input() address: object;
-  @Input() socialLinks: object;
+  @Input() address: any;
+  @Input() socialLinks: any;
   @Input() usefulLinks: object[];
   @Input() newsLetterDescription: string;
   constructor() { }
